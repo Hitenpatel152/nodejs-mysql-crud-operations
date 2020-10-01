@@ -99,17 +99,17 @@ const LoginData = (TxtUserName,TxtPassword)=>{
             console.log(data);
            
             if(data == "Email"){
-                alert("Incorrect Email Id...");
+                alert("Incorrect EmailId or Password...");
             }
             else if(data == "Password"){
-                alert("Incorrect Password...");
+                alert("Incorrect EmailId or Password...");
             }
             else{
-                window.location.replace(`http://localhost:3000/UserProfile?user=${data}`);
+                window.location.replace(`http://localhost:3000/UserProfile`);
             }
         },
         failure:()=>{
-            
+            alert("Sorry for Inconviency...Please Refresh Page");
         }
     });
     return true;
